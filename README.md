@@ -1,14 +1,28 @@
 # HAL 分层混合模型工作流
 
-强模型 + 低成本模型分层协作方案，适用于 [Hermes Agent](https://github.com/hermes-ai/hermes-agent)。
+![Hybrid Model Workflow](poster.png)
+
+强模型 + 低成本模型分层协作方案，适用于 [Hermes Agent](https://github.com/hermes-ai/hermes-agent) 及任何多模型编排场景。
 
 ## 核心理念
 
 不是所有任务都值得用最贵的模型。这套工作流把任务按复杂度分层：
-- **强模型**（Claude / GPT-4o）：负责理解、拆解、判断、最终校验
+- **强模型**（Claude / GPT-5）：负责理解、拆解、判断、最终校验
 - **低成本模型**（DeepSeek V3.1 / Gemini Flash）：负责检索、提取、清洗、摘要
 
 低成本模型只产出中间件，不主导最终结论；强模型对所有交付结果负责。
+
+## 工作流全景
+
+![Workflow Diagram](workflow-diagram.png)
+
+## 特性
+
+- ⚡ **智能路由** — 4 条任务路径自动分类（直接执行 / 先拆解 / 强模型主导 / 信息不足）
+- 🛡️ **双层验收** — 强模型 5 维度审核 + 8 项 Checklist 全过才交付
+- 💰 **节省 70%+** — 低成本模型 ¥2/M tokens，强模型仅用于验收收口
+- 🔒 **零幻觉** — 禁止编造 · 证据优先 · 不确定就明确说不确定
+- 🔌 **模型无关** — 兼容 Claude、DeepSeek、GPT-5、Gemini、Qwen 等
 
 ## 包含内容
 
