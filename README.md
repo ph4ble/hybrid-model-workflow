@@ -57,7 +57,7 @@ git clone https://github.com/ph4ble/hybrid-model-workflow.git ~/.hermes/skills/m
 | V2 | 小模型强约束 + 强模型校验 |
 | V3 | 可执行工作流规范 |
 | V4 | 真实工作流蓝图（路由器、中间件、回写） |
-| V5 | 系统提示词 + Hermes 配置 + 运行信息显示 |
+| V6 | 系统提示词 + Hermes 配置 + 运行信息显示 |
 
 ## License
 
